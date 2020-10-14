@@ -24,8 +24,8 @@ export default class KindlyChatExtensionApplicationCustomizer
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, `Initializing Kindly Chat`);
     const SCRIPT_ID = 'kindly-chat';
-    const BOT_KEY = '99de928b-898d-4f6c-a216-1098eb1154f7';
-    
+    const BOT_KEY = '99de928b-898d-4f6c-a216-1098eb1154f7';  // TODO: Update this
+
     if(document.getElementById(SCRIPT_ID)) {
       Log.info(LOG_SOURCE, `Kindly chat already loaded.`);
       return Promise.resolve();  // Kindly Chat is already initialized
@@ -37,7 +37,7 @@ export default class KindlyChatExtensionApplicationCustomizer
     script.setAttribute('data-bot-key', BOT_KEY);
     script.setAttribute('data-shadow-dom', '1');
     document.head.appendChild(script);
-    
+
     Log.info(LOG_SOURCE, `Appended script to head`);
 
     return Promise.resolve();
