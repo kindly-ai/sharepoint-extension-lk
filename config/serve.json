@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://kindlydev.sharepoint.com/sites/it/SitePages/Printer-FAQ.aspx",
+      "customActions": {
+        "a3dc2fc2-1453-46ee-9436-e2efe895d1a1": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "kindlyChatExtension": {
+      "pageUrl": "https://kindlydev.sharepoint.com/sites/it/SitePages/Printer-FAQ.aspx",
+      "customActions": {
+        "a3dc2fc2-1453-46ee-9436-e2efe895d1a1": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

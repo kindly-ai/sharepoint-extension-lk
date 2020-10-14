@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "kindly-chat-extension-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/kindlyChatExtension/KindlyChatExtensionApplicationCustomizer.js",
+          "manifest": "./src/extensions/kindlyChatExtension/KindlyChatExtensionApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "KindlyChatExtensionApplicationCustomizerStrings": "lib/extensions/kindlyChatExtension/loc/{locale}.js"
+  }
+}
