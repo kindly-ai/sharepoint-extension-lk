@@ -1,10 +1,8 @@
 ## kindly-chat-extension
 
-This is an example Sharepoint extension to load Kindly.
+This is an example Sharepoint extension to add Kindly Chat to Sharepoint. The approach is based on [a migration path for legacy sharepoint scripts](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/extensions/guidance/migrate-from-usercustomactions-to-spfx-extensions).
 
-The approach is based on [a migration path for legacy sharepoint scripts](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/extensions/guidance/migrate-from-usercustomactions-to-spfx-extensions).
-
-Use can use this code as a basis for your own Sharepoint installation. Before deploying you need to your bot key in `src/extensions/kindlyChatExtension/KindlyChatExtensionApplicationCustomizer.ts`. This is the same bot you find on app.kindly.ai under _Connect -> Publish -> Kindly Chat_.
+Use this code as a basis for your own Sharepoint installation. To deploy you first need update your bot key in `src/extensions/kindlyChatExtension/KindlyChatExtensionApplicationCustomizer.ts`. Locate your bot key on app.kindly.ai under _Connect -> Publish -> Kindly Chat_.
 
 ## Install
 ```bash
@@ -16,7 +14,9 @@ gulp serve
 
 ## Deployment
 
-Using localhost:
+See [step three](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/serving-your-extension-from-sharepoint) and [four](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/extensions/get-started/hosting-extension-from-office365-cdn) in the getting started guide for detailed steps.
+
+Using localhost to test:
 
 ```bash
 gulp bundle
@@ -29,6 +29,8 @@ Using CDN:
 gulp bundle --ship
 gulp package-solution  --ship
 ```
+
+Upload the `.sppkg` file under `sharepoint/solution` to your App catalog in your Sharepoint Admin interface.
 
 
 ## References
