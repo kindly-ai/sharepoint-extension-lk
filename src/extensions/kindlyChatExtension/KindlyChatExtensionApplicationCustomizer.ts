@@ -36,6 +36,7 @@ export default class KindlyChatExtensionApplicationCustomizer
     script.id = 'kindly-chat';
     script.setAttribute('data-bot-key', BOT_KEY);
     script.setAttribute('data-shadow-dom', '1');
+    script.setAttribute('data-bubble-avatar', 'https://cdn.spinnaker-js.com/rc/51955/overlays/img/lillesand_avatar.png');
     document.head.appendChild(script);
 
     Log.info(LOG_SOURCE, `Appended script to head`);
